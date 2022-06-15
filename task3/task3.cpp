@@ -1,23 +1,21 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "../doctest.h"
 
-#include <set>
-
 void find_disappeared_numbers(int arr[], int size, int result[])
 {
     int j = 0;
-    std::set<int> seen;
 
     for (int i = 0; i < size; ++i)
     {
-        seen.insert(arr[i]);
+        int current = (arr[i] < 0 ? -arr[i] : arr[i]);
+        arr[current - 1] *= (arr[current - 1] < 0 ? 1 : -1);
     }
 
-    for (int i = 1; i <= size; ++i)
+    for (int i = 0; i < size; ++i)
     {
-        if (seen.find(i) == seen.end())
+        if (arr[i] > 0)
         {
-            result[j++] = i;
+            result[j++] = i + 1;
         }
     }
 }
