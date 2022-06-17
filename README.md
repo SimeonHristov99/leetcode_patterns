@@ -13,6 +13,12 @@ Input: nums = [1,2,3,1]
 Output: true
 ```
 
+<details>
+    <summary>Click here to see a hint</summary>
+
+    Hash map.
+</details>
+
 ## Task 2 (Missing Number)
 
 Given an array nums containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array.
@@ -24,6 +30,12 @@ Input: nums = [3,0,1]
 Output: 2
 Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
 ```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+    Bitwise operations or formula for the sum of the numbers in the range `[1 .. n]`.
+</details>
 
 ## Task 3 (Find All Numbers Disappeared in an Array)
 
@@ -38,6 +50,12 @@ Input: nums = [4,3,2,7,8,2,3,1]
 Output: [5,6]
 ```
 
+<details>
+    <summary>Click here to see a hint</summary>
+
+    Treat the numbers in the list as indices the elements on which you should negate.
+</details>
+
 ## Task 4 (Single Number)
 
 Given a non-empty array of integers `nums`, every element appears *twice* except for one. Find that single one.
@@ -50,6 +68,12 @@ Example:
 Input: nums = [2,2,1]
 Output: 1
 ```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+    Bitwise operations.
+</details>
 
 ## Task 5 (Climbing Stairs)
 
@@ -64,4 +88,10 @@ Explanation: There are two ways to climb to the top.
 1. 1 step + 1 step
 2. 2 steps
 ```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+    Reverse fibonacci. Starts from `1` at `n` and at `n - 1` and increases toward `0`.
+</details>
 
