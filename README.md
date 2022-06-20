@@ -134,3 +134,37 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 Modified sliding window. Keep a prefix and remove it once it becomes negative.
 </details>
 
+## Task 8 (Range Sum Query - Immutable)
+
+Given an integer array `nums`, handle multiple queries of the following type:
+
+1. Calculate the **sum** of the elements of `nums` between indices `left` and `right` **inclusive** where `left <= right`.
+
+Implement the `NumArray` class:
+
+- `NumArray(int[] nums)` Initializes the object with the integer array `nums`.
+- `int sumRange(int left, int right)` Returns the sum of the elements of `nums` between indices `left` and `right` inclusive (i.e. `nums[left] + nums[left + 1] + ... + nums[right]`).
+
+> **Challenge**: Implement `sumRange` to run in O(1) time.
+
+Example:
+
+```text
+Input
+["NumArray", "sumRange", "sumRange", "sumRange"]
+[[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]
+Output
+[null, 1, -1, -3]
+Explanation
+NumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]);
+numArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1
+numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
+numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Dynamic programming - store the sum `[0 .. i]` in an array.
+</details>
+
