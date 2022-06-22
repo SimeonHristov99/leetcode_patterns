@@ -168,3 +168,24 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 Dynamic programming - store the sum `[0 .. i]` in an array.
 </details>
 
+## Task 9 (Counting Bits)
+
+Given an integer `n`, return an array `ans` of length `n + 1` such that for each `i` (`0 <= i <= n`), `ans[i]` is the number of `1`'s in the binary representation of `i`.
+
+Example:
+
+```text
+Input: n = 2
+Output: [0,1,1]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Dynamic programming. No need for bitwise operations.
+</details>
+
