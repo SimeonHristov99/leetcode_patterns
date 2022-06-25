@@ -225,3 +225,22 @@ Explanation: The middle node of the list is node 3.
 Fast and slow pointers.
 </details>
 
+## Task 12 (Palindrome Linked List)
+
+Given the `head` of a singly linked list, return `true` if it is a palindrome.
+
+> **Challenge**: Could you do it in `O(n)` time and `O(1)` space?
+
+Example:
+
+```text
+Input: head = [1,2,2,1]
+Output: true
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Fast and slow pointers.
+</details>
+
