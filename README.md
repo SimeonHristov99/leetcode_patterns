@@ -261,3 +261,20 @@ Output: [1,2,3,4,5]
 Recursion.
 </details>
 
+## Task 14 (Remove Duplicates from Sorted List)
+
+Given the `head` of a sorted linked list, *delete all duplicates such that each element appears only once*. Return *the linked list **sorted** as well*.
+
+Example:
+
+```text
+Input: head = [1,1,2]
+Output: [1,2]
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Fast and slow pointers.
+</details>
+
