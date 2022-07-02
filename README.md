@@ -331,3 +331,23 @@ Explanation: 9 exists in nums and its index is 4
 
 Two pointers/indices.
 </details>
+
+## Task 18 (Find Smallest Letter Greater Than Target)
+
+Given a characters array `letters` that is sorted in **non-decreasing** order and a character `target`, return *the smallest character in the array that is larger than `target`*.
+
+> **Note**: Letters wrap around, i.e. if `target == 'z'` and `letters == ['a', 'b']`, the answer is `'a'`.
+
+Example:
+
+```text
+Input: letters = ["c","f","j"], target = "a"
+Output: "c"
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Binary search.
+</details>
+
