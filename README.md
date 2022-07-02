@@ -308,6 +308,12 @@ Input: list1 = [1,2,4], list2 = [1,3,4]
 Output: [1,1,2,3,4,4]
 ```
 
+<details>
+    <summary>Click here to see a hint</summary>
+
+Two pointers.
+</details>
+
 ## Task 17 (Binary Search)
 
 Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`. You must write an algorithm with `O(log n)` runtime complexity.
