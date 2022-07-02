@@ -326,3 +326,8 @@ Output: 4
 Explanation: 9 exists in nums and its index is 4
 ```
 
+<details>
+    <summary>Click here to see a hint</summary>
+
+Two pointers/indices.
+</details>
