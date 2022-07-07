@@ -403,3 +403,20 @@ Hence return [3, 14.5, 11].
 Breadth-first search.
 </details>
 
+## Task 21 (Minimum Depth of Binary Tree)
+
+Given a binary tree, find its minimum depth. The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+
+Example:
+
+```text
+Input: root = [3,9,20,null,null,15,7]
+Output: 2
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+BFS and/or DFS.
+</details>
+
