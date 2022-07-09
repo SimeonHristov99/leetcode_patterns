@@ -16,7 +16,7 @@ Output: true
 <details>
     <summary>Click here to see a hint</summary>
 
-    Hash map.
+Hash map.
 </details>
 
 ## Task 2 (Missing Number)
@@ -34,7 +34,7 @@ Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0
 <details>
     <summary>Click here to see a hint</summary>
 
-    Bitwise operations or formula for the sum of the numbers in the range `[1 .. n]`.
+Bitwise operations or formula for the sum of the numbers in the range `[1 .. n]`.
 </details>
 
 ## Task 3 (Find All Numbers Disappeared in an Array)
@@ -53,7 +53,7 @@ Output: [5,6]
 <details>
     <summary>Click here to see a hint</summary>
 
-    Treat the numbers in the list as indices the elements on which you should negate.
+Treat the numbers in the list as indices the elements on which you should negate.
 </details>
 
 ## Task 4 (Single Number)
@@ -72,7 +72,7 @@ Output: 1
 <details>
     <summary>Click here to see a hint</summary>
 
-    Bitwise operations.
+Bitwise operations.
 </details>
 
 ## Task 5 (Climbing Stairs)
@@ -92,7 +92,7 @@ Explanation: There are two ways to climb to the top.
 <details>
     <summary>Click here to see a hint</summary>
 
-    Reverse fibonacci. Starts from `1` at `n` and at `n - 1` and increases toward `0`.
+Reverse fibonacci. Starts from `1` at `n` and at `n - 1` and increases toward `0`.
 </details>
 
 ## Task 6 (Best Time to Buy and Sell Stock)
@@ -111,7 +111,7 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 <details>
     <summary>Click here to see a hint</summary>
 
-    Sliding window.
+Sliding window.
 </details>
 
 ## Task 7 (Maximum Subarray)
@@ -191,7 +191,7 @@ Dynamic programming. No need for bitwise operations.
 
 ## Task 10 (Linked List Cycle)
 
-Given `head`, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. Note that `pos` is not passed as a parameter. 
+Given `head`, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. Note that `pos` is not passed as a parameter.
 
 Example:
 
@@ -454,3 +454,19 @@ Output: true
 DFS (recursion).
 </details>
 
+## Task 24 (Maximum Depth of Binary Tree)
+
+Given the `root` of a binary tree, return *its maximum depth*. A binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+Example:
+
+```text
+Input: root = [3,9,20,null,null,15,7]
+Output: 3
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+DFS (recursion).
+</details>
