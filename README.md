@@ -543,3 +543,13 @@ Output: true
 DFS.
 </details>
 
+## Task 29 (Invert Binary Tree)
+
+Given the `root` of a binary tree, invert the tree, and return *its root*.
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+DFS.
+</details>
+
