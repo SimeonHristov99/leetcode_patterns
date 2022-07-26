@@ -559,12 +559,32 @@ Given an array of integers `nums` and an integer `target`, return *indices of th
 
 Example:
 
+```text
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
 
 <details>
     <summary>Click here to see a hint</summary>
 
 Hash map.
 </details>
+
+## Task 31 (Meeting Rooms)
+
+Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
+
+Example:
+
+```text
+Input: times = (0,8),(8,10)
+Output: true
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Intervals.
+</details>
+
