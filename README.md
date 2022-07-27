@@ -588,3 +588,24 @@ Output: true
 Intervals.
 </details>
 
+## Task 32 (Squares of a Sorted Array)
+
+Given an integer array `nums` sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order*.
+
+> **Challenge**: Squaring each element and sorting the new array is very trivial, could you find an `O(n)` solution using a different approach?
+
+Example:
+
+```text
+Input: nums = [-4,-1,0,3,10]
+Output: [0,1,9,16,100]
+Explanation: After squaring, the array becomes [16,1,0,9,100].
+After sorting, it becomes [0,1,9,16,100].
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Two pointers.
+</details>
+
