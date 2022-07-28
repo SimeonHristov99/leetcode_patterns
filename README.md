@@ -609,3 +609,23 @@ After sorting, it becomes [0,1,9,16,100].
 Two pointers.
 </details>
 
+## Task 33 (Backspace String Compare)
+
+Given two strings `s` and `t`, return `true` *if they are equal when both are typed into empty text editors*. `'#'` means a backspace character. Note that after backspacing an empty text, the text will continue empty.
+
+> **Challenge**: Can you solve it in `O(n)` time and `O(1)` space?
+
+Example:
+
+```text
+Input: s = "ab#c", t = "ad#c"
+Output: true
+Explanation: Both s and t become "ac".
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Two pointers.
+</details>
+
