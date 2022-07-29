@@ -629,3 +629,21 @@ Explanation: Both s and t become "ac".
 Two pointers.
 </details>
 
+## Task 34 (Majority Element)
+
+Given an array `nums` of size `n`, return *the majority element*. The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.
+
+> **Challenge**: Could you solve the problem in linear time and in `O(1)` space?
+
+Example:
+
+```text
+Input: nums = [3,2,3]
+Output: 3
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Hash map.
+</details>
