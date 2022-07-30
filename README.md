@@ -647,3 +647,21 @@ Output: 3
 
 Hash map.
 </details>
+
+## Task 35 (Index Pairs of a String)
+
+Given a string `text` and and array of strings `words`, return *an array of all index pairs `[i, j]` so that the substring `text[i..j]` is in `words`*. Return the pairs `[i, j]` in sorted order (i.e. sort them by their first coordinate, and in case of ties sort them by their second corrdinate).
+
+Example:
+
+```text
+Input: text = "thestoryofleetcodeandme", words = ["story","fleet","leetcode"]
+Output: [[3,7],[9,13],[10,17]]
+```
+
+<details>
+    <summary>Click here to see a hint</summary>
+
+Trie.
+</details>
+
