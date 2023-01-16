@@ -1,8 +1,10 @@
 # LeetCode Patterns
 
-Holds my solutions to the [LeetCode Patterns problems](https://seanprashad.com/leetcode-patterns/).
+Initially the goal was to store solutions to the [LeetCode Patterns problems](https://seanprashad.com/leetcode-patterns/). However, they were not grouped well enough in my opinion and I transitioned to the [Neetcode roadmap](https://neetcode.io/roadmap). It is basically the same, but the problems are grouped therefore making it easier to understand the concepts they test.
 
-## Task 1 (Contains Duplicate)
+## Arrays & Hashing
+
+### Task 1: Contains Duplicate
 
 Given an integer array `nums` return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.
 
@@ -13,13 +15,36 @@ Input: nums = [1,2,3,1]
 Output: true
 ```
 
-<details>
-    <summary>Click here to see a hint</summary>
+### Task 2: Valid Anagram
 
-Hash map.
-</details>
+Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
 
-## Task 2 (Missing Number)
+An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+Example:
+
+```text
+Input: s = "anagram", t = "nagaram"
+Output: true
+```
+
+### Task 3: Two Sum
+
+Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*. You may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice. You can return the answer in any order.
+
+Example:
+
+```text
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
+
+## Older tasks
+
+The solutions for the following are in the `archive` directory.
+
+### Task 2 (Missing Number)
 
 Given an array nums containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array.
 
@@ -37,7 +62,7 @@ Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0
 Bitwise operations or formula for the sum of the numbers in the range `[1 .. n]`.
 </details>
 
-## Task 3 (Find All Numbers Disappeared in an Array)
+### Task 3 (Find All Numbers Disappeared in an Array)
 
 Given an array `nums` of `n` integers where `nums[i]` is in the range `[1, n]`, return an array of all the integers in the range `[1, n]` that do not appear in `nums`.
 
@@ -56,7 +81,7 @@ Output: [5,6]
 Treat the numbers in the list as indices the elements on which you should negate.
 </details>
 
-## Task 4 (Single Number)
+### Task 4 (Single Number)
 
 Given a non-empty array of integers `nums`, every element appears *twice* except for one. Find that single one.
 
@@ -75,7 +100,7 @@ Output: 1
 Bitwise operations.
 </details>
 
-## Task 5 (Climbing Stairs)
+### Task 5 (Climbing Stairs)
 
 You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb `1` or `2` steps. In how many distinct ways can you climb to the top?
 
@@ -95,7 +120,7 @@ Explanation: There are two ways to climb to the top.
 Reverse fibonacci. Starts from `1` at `n` and at `n - 1` and increases toward `0`.
 </details>
 
-## Task 6 (Best Time to Buy and Sell Stock)
+### Task 6 (Best Time to Buy and Sell Stock)
 
 You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day. You want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock. Return *the maximum profit you can achieve from this transaction*. If you cannot achieve any profit, return `0`.
 
@@ -114,7 +139,7 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 Sliding window.
 </details>
 
-## Task 7 (Maximum Subarray)
+### Task 7 (Maximum Subarray)
 
 Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum and return *its sum*. A **subarray** is a **contiguous** part of an array.
 
@@ -134,7 +159,7 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 Modified sliding window. Keep a prefix and remove it once it becomes negative.
 </details>
 
-## Task 8 (Range Sum Query - Immutable)
+### Task 8 (Range Sum Query - Immutable)
 
 Given an integer array `nums`, handle multiple queries of the following type:
 
@@ -168,7 +193,7 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 Dynamic programming - store the sum `[0 .. i]` in an array.
 </details>
 
-## Task 9 (Counting Bits)
+### Task 9 (Counting Bits)
 
 Given an integer `n`, return an array `ans` of length `n + 1` such that for each `i` (`0 <= i <= n`), `ans[i]` is the number of `1`'s in the binary representation of `i`.
 
@@ -189,7 +214,7 @@ Explanation:
 Dynamic programming. No need for bitwise operations.
 </details>
 
-## Task 10 (Linked List Cycle)
+### Task 10 (Linked List Cycle)
 
 Given `head`, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. Note that `pos` is not passed as a parameter.
 
@@ -207,7 +232,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
 Fast and slow pointers.
 </details>
 
-## Task 11 (Middle of the Linked List)
+### Task 11 (Middle of the Linked List)
 
 Given the `head` of a singly linked list, return *the middle node of the linked list*. If there are two middle nodes, return **the second middle** node.
 
@@ -225,7 +250,7 @@ Explanation: The middle node of the list is node 3.
 Fast and slow pointers.
 </details>
 
-## Task 12 (Palindrome Linked List)
+### Task 12 (Palindrome Linked List)
 
 Given the `head` of a singly linked list, return `true` if it is a palindrome.
 
@@ -244,7 +269,7 @@ Output: true
 Fast and slow pointers.
 </details>
 
-## Task 13 (Remove Linked List Elements)
+### Task 13 (Remove Linked List Elements)
 
 Given the `head` of a linked list and an integer `val`, remove all the nodes of the linked list that have `Node.val == val`, and return *the new head*.
 
@@ -261,7 +286,7 @@ Output: [1,2,3,4,5]
 Recursion.
 </details>
 
-## Task 14 (Remove Duplicates from Sorted List)
+### Task 14 (Remove Duplicates from Sorted List)
 
 Given the `head` of a sorted linked list, *delete all duplicates such that each element appears only once*. Return *the linked list **sorted** as well*.
 
@@ -278,7 +303,7 @@ Output: [1,2]
 Fast and slow pointers.
 </details>
 
-## Task 15 (Reverse Linked List)
+### Task 15 (Reverse Linked List)
 
 Given the `head` of a singly linked list, reverse the list, and return *the reversed list*.
 
@@ -297,7 +322,7 @@ Output: [5,4,3,2,1]
     Pointers.
 </details>
 
-## Task 16 (Merge Two Sorted Lists)
+### Task 16 (Merge Two Sorted Lists)
 
 You are given the heads of two sorted linked lists `list1` and `list2`. Merge the two lists in a one **sorted** list. The list should be made by splicing together the nodes of the first two lists. Return *the head of the merged linked list*.
 
@@ -314,7 +339,7 @@ Output: [1,1,2,3,4,4]
 Two pointers.
 </details>
 
-## Task 17 (Binary Search)
+### Task 17 (Binary Search)
 
 Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`. You must write an algorithm with `O(log n)` runtime complexity.
 
@@ -332,7 +357,7 @@ Explanation: 9 exists in nums and its index is 4
 Two pointers/indices.
 </details>
 
-## Task 18 (Find Smallest Letter Greater Than Target)
+### Task 18 (Find Smallest Letter Greater Than Target)
 
 Given a characters array `letters` that is sorted in **non-decreasing** order and a character `target`, return *the smallest character in the array that is larger than `target`*.
 
@@ -351,7 +376,7 @@ Output: "c"
 Binary search.
 </details>
 
-## Task 19 (Peak Index in a Mountain Array)
+### Task 19 (Peak Index in a Mountain Array)
 
 Let's call an array `arr` a **mountain** if the following properties hold:
 
@@ -384,7 +409,7 @@ Output: 1
 Binary search.
 </details>
 
-## Task 20 (Average of Levels in Binary Tree)
+### Task 20 (Average of Levels in Binary Tree)
 
 Given the `root` of a binary tree, return *the average value of the nodes on each level in the form of an array*.
 
@@ -403,7 +428,7 @@ Hence return [3, 14.5, 11].
 Breadth-first search.
 </details>
 
-## Task 21 (Minimum Depth of Binary Tree)
+### Task 21 (Minimum Depth of Binary Tree)
 
 Given a binary tree, find its minimum depth. The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
@@ -420,7 +445,7 @@ Output: 2
 BFS and/or DFS.
 </details>
 
-## Task 22 (Same Tree)
+### Task 22 (Same Tree)
 
 Given the roots of two binary trees `p` and `q`, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
@@ -437,7 +462,7 @@ Output: true
 DFS (recursion).
 </details>
 
-## Task 23 (Path Sum)
+### Task 23 (Path Sum)
 
 Given the `root` of a binary tree and an integer `targetSum`, return `true` if the tree has a **root-to-leaf** path such that adding up all the values along the path equals `targetSum`.
 
@@ -454,7 +479,7 @@ Output: true
 DFS (recursion).
 </details>
 
-## Task 24 (Maximum Depth of Binary Tree)
+### Task 24 (Maximum Depth of Binary Tree)
 
 Given the `root` of a binary tree, return *its maximum depth*. A binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
@@ -471,7 +496,7 @@ Output: 3
 DFS (recursion).
 </details>
 
-## Task 25 (Diameter of Binary Tree)
+### Task 25 (Diameter of Binary Tree)
 
 Given the `root` of a binary tree, return *the length of the **diameter** of the tree*. The **diameter** of a binary tree is the **length** of the longest path between any two nodes in a tree. This path may or may not pass through the `root`. The **length** of a path between two nodes is represented by the number of edges between them.
 
@@ -489,7 +514,7 @@ Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
 DFS.
 </details>
 
-## Task 26 (Merge Two Binary Trees)
+### Task 26 (Merge Two Binary Trees)
 
 You are given two binary trees `root1` and `root2`. Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree. Return *the merged tree*.
 
@@ -508,7 +533,7 @@ Output: [3,4,5,5,4,null,7]
 DFS.
 </details>
 
-## Task 27 (Lowest Common Ancestor of a Binary Search Tree)
+### Task 27 (Lowest Common Ancestor of a Binary Search Tree)
 
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST. According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/Lowest_common_ancestor): “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow **a node to be a descendant of itself**).”
 
@@ -526,7 +551,7 @@ Explanation: The LCA of nodes 2 and 8 is 6.
 DFS.
 </details>
 
-## Task 28 (Subtree of Another Tree)
+### Task 28 (Subtree of Another Tree)
 
 Given the roots of two binary trees `root` and `subRoot`, return `true` if there is a subtree of `root` with the same structure and node values of `subRoot` and `false` otherwise. A subtree of a binary tree `tree` is a tree that consists of a node in `tree` and all of this node's descendants. The tree `tree` could also be considered as a subtree of itself.
 
@@ -543,7 +568,7 @@ Output: true
 DFS.
 </details>
 
-## Task 29 (Invert Binary Tree)
+### Task 29 (Invert Binary Tree)
 
 Given the `root` of a binary tree, invert the tree, and return *its root*.
 
@@ -553,25 +578,7 @@ Given the `root` of a binary tree, invert the tree, and return *its root*.
 DFS.
 </details>
 
-## Task 30 (Two Sum)
-
-Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*. You may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice. You can return the answer in any order.
-
-Example:
-
-```text
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
-```
-
-<details>
-    <summary>Click here to see a hint</summary>
-
-Hash map.
-</details>
-
-## Task 31 (Meeting Rooms)
+### Task 31 (Meeting Rooms)
 
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
 
@@ -588,7 +595,7 @@ Output: true
 Intervals.
 </details>
 
-## Task 32 (Squares of a Sorted Array)
+### Task 32 (Squares of a Sorted Array)
 
 Given an integer array `nums` sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order*.
 
@@ -609,7 +616,7 @@ After sorting, it becomes [0,1,9,16,100].
 Two pointers.
 </details>
 
-## Task 33 (Backspace String Compare)
+### Task 33 (Backspace String Compare)
 
 Given two strings `s` and `t`, return `true` *if they are equal when both are typed into empty text editors*. `'#'` means a backspace character. Note that after backspacing an empty text, the text will continue empty.
 
@@ -629,7 +636,7 @@ Explanation: Both s and t become "ac".
 Two pointers.
 </details>
 
-## Task 34 (Majority Element)
+### Task 34 (Majority Element)
 
 Given an array `nums` of size `n`, return *the majority element*. The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.
 
@@ -648,7 +655,7 @@ Output: 3
 Hash map.
 </details>
 
-## Task 35 (Index Pairs of a String)
+### Task 35 (Index Pairs of a String)
 
 Given a string `text` and and array of strings `words`, return *an array of all index pairs `[i, j]` so that the substring `text[i..j]` is in `words`*. Return the pairs `[i, j]` in sorted order (i.e. sort them by their first coordinate, and in case of ties sort them by their second corrdinate).
 
@@ -665,7 +672,7 @@ Output: [[3,7],[9,13],[10,17]]
 Trie.
 </details>
 
-## Task 36 (Convert 1D Array Into 2D Array)
+### Task 36 (Convert 1D Array Into 2D Array)
 
 You are given a 0-indexed 1-dimensional (1D) integer array original, and two integers, m and n. You are tasked with creating a 2-dimensional (2D) array with m rows and n columns using all the elements from original.
 
@@ -686,7 +693,7 @@ Output: [[1,2],[3,4]]
 Looping.
 </details>
 
-## Task 37 (Product of Array Except Self)
+### Task 37 (Product of Array Except Self)
 
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
