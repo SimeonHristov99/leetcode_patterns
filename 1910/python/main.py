@@ -1,3 +1,6 @@
+# Pattern: Stack.
+
+
 def remove_occurrences(s: str, part: str) -> str:
     stack = ''
     for ch in s:

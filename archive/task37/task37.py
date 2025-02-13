@@ -5,6 +5,7 @@ from typing import List
 
 
 class Solution:
+
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         result = []
         left = []
@@ -21,6 +22,6 @@ class Solution:
             to_add *= n
 
         for (n, k) in zip(left, right):
-            result.append(n*k)
+            result.append(n * k)
 
         return result

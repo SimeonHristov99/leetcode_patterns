@@ -1,8 +1,9 @@
-from typing import List
 import unittest
+from typing import List
 
 
 class Interval(object):
+
     def __init__(self, start, end):
         self.start = start
         self.end = end
